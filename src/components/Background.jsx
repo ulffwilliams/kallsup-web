@@ -4,7 +4,7 @@ import '/src/scss/background.scss'
 function Background() {
   return (
     <>
-    <video src="/src/assets/7.4.mp4" autoPlay muted loop id='background-video'></video>
+    <video src="kallsup-web/images//7.4.mp4" autoPlay muted loop id='background-video'></video>
     </>
   )
 }

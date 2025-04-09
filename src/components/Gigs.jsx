@@ -4,11 +4,9 @@ function Gigs() {
     const [shows, setShows] = useState([]);
     const [error, setError] = useState(null);
 
-/*     const [loading, setLoading] = useState(true);
-    const [error, setError] = useState(null); */
     useEffect(() => {
         async function fetchShows() {
-            const url = "/src/shows.json";
+            const url = "kallsup-web/json/shows.json";
             try{
                 const response = await fetch(url);
                 if (!response.ok) {
@@ -16,8 +14,7 @@ function Gigs() {
                 }
     
                 const json = await response.json();
-/*                 setShows(json);
-                console.log(json); */
+
                 setShows(json.shows)
             } catch (error) {
                 console.error("Error fetching shows:", error);

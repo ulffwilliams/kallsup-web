@@ -17,7 +17,7 @@ function FrontPage() {
     <div>
       <div id="frontpage-wrapper">
         <div id="logo-wrapper">
-          <img src="/src/assets/loggavit.png" alt="logo" id="logo" />
+          <img src="kallsup-web/images/loggavit.png" alt="logo" id="logo" />
         </div>
         {!showContact && !showGigs ? (
           <>
@@ -31,7 +31,7 @@ function FrontPage() {
           </div>
                   <div id="socials-wrapper">
                   <img
-                    src="/src/assets/spotify.svg"
+                    src="kallsup-web/images/spotify.svg"
                     alt="spotify"
                     onClick={() =>
                       handleClick(
@@ -40,12 +40,12 @@ function FrontPage() {
                     }
                   />
                   <img
-                    src="/src/assets/instagram.svg"
+                    src="kallsup-web/images/instagram.svg"
                     alt="instagram"
                     onClick={() => handleClick("https://www.instagram.com/kallsup909/")}
                   />
                   <img
-                    src="/src/assets/facebook.svg"
+                    src="kallsup-web/images/facebook.svg"
                     alt="facebook"
                     onClick={() => handleClick("https://www.facebook.com/kallsup909")}
                   />
