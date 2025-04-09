@@ -6,7 +6,7 @@ function Gigs() {
 
     useEffect(() => {
         async function fetchShows() {
-            const url = "kallsup-web/json/shows.json";
+            const url = "./json/shows.json";
             try{
                 const response = await fetch(url);
                 if (!response.ok) {

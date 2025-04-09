@@ -31,7 +31,7 @@ function FrontPage() {
           </div>
                   <div id="socials-wrapper">
                   <img
-                    src="kallsup-web/images/spotify.svg"
+                    src="./images/spotify.svg"
                     alt="spotify"
                     onClick={() =>
                       handleClick(
@@ -40,12 +40,12 @@ function FrontPage() {
                     }
                   />
                   <img
-                    src="kallsup-web/images/instagram.svg"
+                    src="./images/instagram.svg"
                     alt="instagram"
                     onClick={() => handleClick("https://www.instagram.com/kallsup909/")}
                   />
                   <img
-                    src="kallsup-web/images/facebook.svg"
+                    src="./images/facebook.svg"
                     alt="facebook"
                     onClick={() => handleClick("https://www.facebook.com/kallsup909")}
                   />
