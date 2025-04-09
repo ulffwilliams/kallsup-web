@@ -17,7 +17,7 @@ function FrontPage() {
     <div>
       <div id="frontpage-wrapper">
         <div id="logo-wrapper">
-          <img src="kallsup-web/images/loggavit.png" alt="logo" id="logo" />
+          <img src="./images/loggavit.png" alt="logo" id="logo" />
         </div>
         {!showContact && !showGigs ? (
           <>
