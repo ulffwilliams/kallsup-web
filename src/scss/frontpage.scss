@@ -1,0 +1,103 @@
+*{
+    font-family: "ELEGANT TYPEWRITER", sans-serif;
+}
+
+#logo-wrapper {
+    width: 20em;
+    -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    #logo{
+        width: 100%;
+    }
+
+}
+
+#button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+    gap: 1em;
+
+    a {
+        cursor: pointer;
+    }
+    a:nth-child(1){
+        -webkit-animation: fade-in 4s cubic-bezier(0.390, 0.575, 0.565, 3.000) 1s both;
+        animation: fade-in 4s cubic-bezier(0.390, 0.575, 0.565, 3.000) 1s both;
+    }
+    a:nth-child(2){
+        -webkit-animation: fade-in 4s cubic-bezier(0.390, 0.575, 0.565, 3.000) 1.25s both;
+        animation: fade-in 4s cubic-bezier(0.390, 0.575, 0.565, 3.000) 1.25s both;
+    }
+    
+    a:nth-child(3){
+        -webkit-animation: fade-in 4s cubic-bezier(0.390, 0.575, 0.565, 3.000) 1.5s both;
+        animation: fade-in 4s cubic-bezier(0.390, 0.575, 0.565, 3.000) 1.5s both;
+    }
+    a:nth-child(4){
+        -webkit-animation: fade-in 4s cubic-bezier(0.390, 0.575, 0.565, 3.000) 1.75s both;
+        animation: fade-in 4s cubic-bezier(0.390, 0.575, 0.565, 3.000) 1.75s both;
+    }
+}
+
+.p-return {
+    filter: invert(84%) sepia(10%) saturate(868%) hue-rotate(167deg) brightness(93%) contrast(94%) blur(.6px);
+    cursor: pointer;
+}
+
+#socials-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3em;
+    gap: 1em;
+
+
+    img {
+        width: 2em;
+        cursor: pointer;
+        filter: invert(84%) sepia(10%) saturate(868%) hue-rotate(167deg) brightness(93%) contrast(94%) blur(.6px);
+    }
+}
+
+#gigs-wrapper {
+    
+    ul{
+        list-style: none;
+        text-transform: uppercase;
+
+        
+        li {
+            max-height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1em;
+            font-size: .8rem;
+
+            #ticket-button{
+                color: rgb(50, 160, 180);
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+
+ @-webkit-keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }

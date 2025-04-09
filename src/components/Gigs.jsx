@@ -1,0 +1,50 @@
+import React, { useState, useEffect } from 'react'
+function Gigs() {
+
+    const [shows, setShows] = useState([]);
+    const [error, setError] = useState(null);
+
+/*     const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null); */
+    useEffect(() => {
+        async function fetchShows() {
+            const url = "/src/shows.json";
+            try{
+                const response = await fetch(url);
+                if (!response.ok) {
+                    throw new Error("Något gick fel med att hämta spelningar");
+                }
+    
+                const json = await response.json();
+/*                 setShows(json);
+                console.log(json); */
+                setShows(json.shows)
+            } catch (error) {
+                console.error("Error fetching shows:", error);
+                setError(error);
+            }
+        }
+        fetchShows();
+    },[])
+
+  return (
+    <div id='gigs-wrapper'>
+      <h2>Kommande spelningar</h2>
+        {error && <p>{error.message}</p>}
+    <ul>
+          {Array.isArray(shows) && shows.map((show) => (
+            <li key={show.id}>
+              <p>{show.date}</p>
+              <p>{show.location},</p>
+              <p>{show.venue}</p>
+              <a href={show.ticketLink} id='ticket-button'>Info</a>
+            </li>
+          ))}
+        </ul>
+
+
+    </div>
+  )
+}
+
+export default Gigs
