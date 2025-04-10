@@ -2,15 +2,11 @@ import React, { useState, useEffect } from 'react'
 
 function Gigs() {
     const [shows, setShows] = useState([]);
-    const [error, setError] = useState(null);
-    const [loading, setLoading] = useState(true);
-    const [timeoutReached, setTimeoutReached] = useState(false);
+
+
+
 
     useEffect(() => {
-        const timeout = setTimeout(() => {
-            setTimeoutReached(true);
-            setLoading(false);
-        }, 10000);
 
         async function fetchShows() {
             const url = "./json/shows.json";
@@ -29,15 +25,9 @@ function Gigs() {
                     const showDate = new Date(`20${year}-${month}-${day}`);
                     return showDate >= today;
                 });
-
                 setShows(filteredShows);
-                setLoading(false);
-                clearTimeout(timeout); 
             } catch (error) {
                 console.error("Error fetching shows:", error);
-                setError(error);
-                setLoading(false);
-                clearTimeout(timeout);
             }
         }
 
@@ -47,17 +37,6 @@ function Gigs() {
     return (
         <div id='gigs-wrapper'>
             <h2>Kommande spelningar</h2>
-            {loading ? (
-                timeoutReached ? (
-                    <p>Det tog för lång tid att ladda spelningar. Försök igen senare.</p>
-                ) : (
-                    <p>Laddar...</p>
-                )
-            ) : error ? (
-                <p>{error.message}</p>
-            ) : shows.length === 0 ? (
-                <p>Inga bokade spelningar för tillfället. Eller så har vi glömt skriva in det här..</p>
-            ) : (
                 <ul>
                     {Array.isArray(shows) && shows.map((show) => (
                         <li key={show.id}>
@@ -68,7 +47,6 @@ function Gigs() {
                         </li>
                     ))}
                 </ul>
-            )}
         </div>
     );
 }
