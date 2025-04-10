@@ -3,9 +3,6 @@ import React, { useState, useEffect } from 'react'
 function Gigs() {
     const [shows, setShows] = useState([]);
 
-
-
-
     useEffect(() => {
 
         async function fetchShows() {
@@ -21,11 +18,7 @@ function Gigs() {
 
                 // Filtrera ut gamla spelningar.
                 const filteredShows = json.shows.filter((show) => {
-                    const showDate = new Date(show.date); // Use Date constructor directly
-                    if (isNaN(showDate)) {
-                        console.error(`Invalid date format: ${show.date}`);
-                        return false;
-                    }
+                    const showDate = new Date(show.date); // Directly parse ISO 8601 date
                     return showDate >= today;
                 });
                 setShows(filteredShows);
@@ -41,14 +34,18 @@ function Gigs() {
         <div id='gigs-wrapper'>
             <h2>Kommande spelningar</h2>
                 <ul>
-                    {Array.isArray(shows) && shows.map((show) => (
-                        <li key={show.id}>
-                            <p>{show.date}</p>
-                            <p>{show.location},</p>
-                            <p>{show.venue}</p>
-                            <a href={show.ticketLink} id='ticket-button'>Info</a>
-                        </li>
-                    ))}
+                    {Array.isArray(shows) && shows.map((show) => {
+                        const showDate = new Date(show.date);
+                        const formattedDate = `${String(showDate.getDate()).padStart(2, '0')}/${String(showDate.getMonth() + 1).padStart(2, '0')}-${String(showDate.getFullYear()).slice(-2)}`;
+                        return (
+                            <li key={show.id}>
+                                <p>{formattedDate}</p>
+                                <p>{show.location},</p>
+                                <p>{show.venue}</p>
+                                <a href={show.ticketLink} id='ticket-button'>Info</a>
+                            </li>
+                        );
+                    })}
                 </ul>
         </div>
     );
