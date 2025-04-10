@@ -31,8 +31,10 @@ function FrontPage() {
           </div>
                   <div id="socials-wrapper">
                   <img
-                    src="./images/spotify.svg"
+                    src="./images/spotify.png"
                     alt="spotify"
+                    height={"32px"}
+                    width={"32px"}
                     onClick={() =>
                       handleClick(
                         "https://open.spotify.com/artist/0lksP63BacYDmZCjWyNWnz?si=NingIZdDR2m1etGIhMmgew"
@@ -40,13 +42,17 @@ function FrontPage() {
                     }
                   />
                   <img
-                    src="./images/instagram.svg"
+                    src="./images/instagram.png"
                     alt="instagram"
+                    height={"32px"}
+                    width={"32px"}
                     onClick={() => handleClick("https://www.instagram.com/kallsup909/")}
                   />
                   <img
-                    src="./images/facebook.svg"
+                    src="./images/facebook.png"
                     alt="facebook"
+                    height={"32px"}
+                    width={"32px"}
                     onClick={() => handleClick("https://www.facebook.com/kallsup909")}
                   />
                 </div>
