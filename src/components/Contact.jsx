@@ -4,7 +4,7 @@ function Contact() {
   return (
     <>
     <h2>Kontakt</h2>
-    <p>mgmt@kallsup.se</p>
+    <p id='mail'>mgmt@kallsup.se</p>
     <p>Eller skicka ett DM på Instagram</p>
     </>
   )

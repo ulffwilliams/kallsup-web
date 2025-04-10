@@ -52,15 +52,15 @@ function FrontPage() {
                 </div>
                 </>
         ) : showContact ? (
-          <>
+          <div className="component-anim">
           <Contact />
           <p className='p-return' onClick={() => setShowContact(false)}>Tillbaka</p>
-          </>
+          </div>
         ) : (
-          <>
+          <div className='component-anim'>
           <Gigs />
           <p className='p-return' onClick={() => setShowGigs(false)}>Tillbaka</p>
-          </>
+          </div>
         )}
 
       </div>

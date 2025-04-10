@@ -1,6 +1,6 @@
-*{
+/* *{
     font-family: "ELEGANT TYPEWRITER", sans-serif;
-}
+} */
 
 #logo-wrapper {
     width: 20em;
@@ -8,6 +8,7 @@
     animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
     #logo{
         width: 100%;
+        animation: blur 4s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite;
     }
 
 }
@@ -21,6 +22,12 @@
 
     a {
         cursor: pointer;
+        transition: .2s ease-in-out;
+    }
+
+    a:hover {
+        filter: invert(84%) sepia(10%) saturate(868%) hue-rotate(167deg) brightness(93%) contrast(94%) blur(.6px);
+        transform: scale(1.05) rotate(1deg);
     }
     a:nth-child(1){
         -webkit-animation: fade-in 4s cubic-bezier(0.390, 0.575, 0.565, 3.000) 1s both;
@@ -44,6 +51,12 @@
 .p-return {
     filter: invert(84%) sepia(10%) saturate(868%) hue-rotate(167deg) brightness(93%) contrast(94%) blur(.6px);
     cursor: pointer;
+    transition: .4s ease-in-out;
+}
+
+.p-return:hover {
+    filter: invert(0%) sepia(10%) saturate(868%) hue-rotate(167deg) brightness(93%) contrast(94%) blur(.6px);
+    transform: scale(1.05) rotate(1deg);
 }
 
 #socials-wrapper{
@@ -58,6 +71,12 @@
         width: 2em;
         cursor: pointer;
         filter: invert(84%) sepia(10%) saturate(868%) hue-rotate(167deg) brightness(93%) contrast(94%) blur(.6px);
+        transition: .2s ease-in-out;
+    }
+
+    img:hover {
+            filter: invert(84%) sepia(10%) saturate(868%) hue-rotate(167deg) brightness(93%) contrast(94%) blur(.6px);
+            transform: scale(1.2) rotate(1deg);
     }
 }
 
@@ -84,6 +103,40 @@
     }
 }
 
+.component-anim {
+    -webkit-animation: blur-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: blur-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+
+#mail {
+    text-decoration: underline;
+}
+
+@keyframes blur {
+    0% {
+      filter: blur(.2px);
+    }
+    50%{
+        filter: blur(.6px);
+    }
+    100% {
+      filter: blur(0px);
+    }
+  }
+  @-webkit-keyframes blur {
+    0% {
+      filter: blur(.2px);
+    }
+
+    50%{
+        filter: blur(.6px);
+    }
+    100% {
+      filter: blur(0px);
+    }
+  }
+
 
  @-webkit-keyframes fade-in {
     0% {
@@ -99,5 +152,26 @@
     }
     100% {
       opacity: 1;
+    }
+  }
+
+  @-webkit-keyframes blur-in {
+    0% {
+      filter: blur(2px);
+      opacity: .4;
+    }
+    100% {
+     filter: blur(0px);
+        opacity: 1;
+    }
+  }
+  @keyframes blur-in {
+    0% {
+      filter: blur(2px);
+        opacity: .4;
+    }
+    100% {
+        filter: blur(0px);
+        opacity: 1;
     }
   }
