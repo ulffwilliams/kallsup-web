@@ -1,5 +1,13 @@
 {
     "shows": [
+                {
+            "id": 0,
+            "date": "8/4-01",
+            "location": "Göteborg",
+            "venue": "Ullevi",
+            "note": "w/ Bruce Springsteen",
+            "ticketLink": "https://sv.wikipedia.org/wiki/Grisch"
+        },
         {
             "id": 1,
             "date": "11/4-25",
@@ -47,6 +55,14 @@
             "venue": "Kalmar Nation",
             "note": "w/ Nektar + Suspiria",
             "ticketLink": "https://www.instagram.com/kalmarnationuppsala/"
+        },
+        {
+            "id": 7,
+            "date": "10/5-25",
+            "location": "Kristinehamn",
+            "venue": "Mastmagasinet",
+            "note": "w/ Belleville",
+            "ticketLink": "https://www.tickster.com/se/sv/events/y88cbnh8uv9jmwc/2025-05-10/belleville-kallsup"
         }
     ]
 }
