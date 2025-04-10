@@ -21,8 +21,11 @@ function Gigs() {
 
                 // Filtrera ut gamla spelningar.
                 const filteredShows = json.shows.filter((show) => {
-                    const [day, month, year] = show.date.split(/[/-]/);
-                    const showDate = new Date(`20${year}-${month}-${day}`);
+                    const showDate = new Date(show.date); // Use Date constructor directly
+                    if (isNaN(showDate)) {
+                        console.error(`Invalid date format: ${show.date}`);
+                        return false;
+                    }
                     return showDate >= today;
                 });
                 setShows(filteredShows);
