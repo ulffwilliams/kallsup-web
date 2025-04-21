@@ -19,7 +19,7 @@ function Gigs() {
                 // Filtrera ut gamla spelningar.
                 const filteredShows = json.shows.filter((show) => {
                     const showDate = new Date(show.date); // Directly parse ISO 8601 date
-                    return showDate >= today;
+                    return showDate > today;
                 });
                 setShows(filteredShows);
             } catch (error) {

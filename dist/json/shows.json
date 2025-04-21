@@ -1,8 +1,8 @@
 {
     "shows": [
-                {
+        {
             "id": 0,
-            "date": "8/4-01",
+            "date": "2001-04-08",
             "location": "Göteborg",
             "venue": "Ullevi",
             "note": "w/ Bruce Springsteen",
@@ -10,7 +10,7 @@
         },
         {
             "id": 1,
-            "date": "11/4-25",
+            "date": "2025-04-11",
             "location": "Malmö",
             "venue": "Grand",
             "note": "w/ Majorelle Blue",
@@ -18,7 +18,7 @@
         },
         {
             "id": 2,
-            "date": "12/4-25",
+            "date": "2025-04-12",
             "location": "Aarhus (DK)",
             "venue": "HeadQuarters",
             "note": "w/ Catch The Breeze",
@@ -26,7 +26,7 @@
         },
         {
             "id": 3,
-            "date": "13/4-25",
+            "date": "2025-04-13",
             "location": "Sønderborg (DK)",
             "venue": "Mejeriet",
             "note": "w/ DEAFDEAFDEAF",
@@ -34,7 +34,7 @@
         },
         {
             "id": 4,
-            "date": "16/4-25",
+            "date": "2025-04-16",
             "location": "Hamburg (DE)",
             "venue": "MS Hedi",
             "note": "w/ Fluppe",
@@ -42,7 +42,7 @@
         },
         {
             "id": 5,
-            "date": "19/4-25",
+            "date": "2025-04-19",
             "location": "København(DK)",
             "venue": "Loppen",
             "note": "w/ Svart Ridå",
@@ -50,7 +50,7 @@
         },
         {
             "id": 6,
-            "date": "26/4-25",
+            "date": "2025-04-26",
             "location": "Uppsala",
             "venue": "Kalmar Nation",
             "note": "w/ Nektar + Suspiria",
@@ -58,7 +58,7 @@
         },
         {
             "id": 7,
-            "date": "10/5-25",
+            "date": "2025-05-10",
             "location": "Kristinehamn",
             "venue": "Mastmagasinet",
             "note": "w/ Belleville",
