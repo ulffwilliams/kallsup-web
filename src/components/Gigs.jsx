@@ -16,11 +16,13 @@ function Gigs() {
                 const json = await response.json();
                 const today = new Date();
 
-                // Filtrera ut gamla spelningar.
-                const filteredShows = json.shows.filter((show) => {
-                    const showDate = new Date(show.date); // Directly parse ISO 8601 date
-                    return showDate > today;
-                });
+                // Filtrera ut gamla spelningar och sortera efter datum.
+                const filteredShows = json.shows
+                    .filter((show) => {
+                        const showDate = new Date(show.date); // Directly parse ISO 8601 date
+                        return showDate > today;
+                    })
+                    .sort((a, b) => new Date(a.date) - new Date(b.date)); // Sort by date ascending
                 setShows(filteredShows);
             } catch (error) {
                 console.error("Error fetching shows:", error);
