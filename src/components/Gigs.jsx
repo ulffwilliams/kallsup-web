@@ -19,10 +19,10 @@ function Gigs() {
                 // Filtrera ut gamla spelningar och sortera efter datum.
                 const filteredShows = json.shows
                     .filter((show) => {
-                        const showDate = new Date(show.date); // Directly parse ISO 8601 date
+                        const showDate = new Date(show.date); 
                         return showDate > today;
                     })
-                    .sort((a, b) => new Date(a.date) - new Date(b.date)); // Sort by date ascending
+                    .sort((a, b) => new Date(a.date) - new Date(b.date)); 
                 setShows(filteredShows);
             } catch (error) {
                 console.error("Error fetching shows:", error);
@@ -44,7 +44,7 @@ function Gigs() {
                                 <p>{formattedDate}</p>
                                 <p>{show.location},</p>
                                 <p>{show.venue}</p>
-                                <a href={show.ticketLink} id='ticket-button'>Info</a>
+                                <a href={show.ticketLink} id='ticket-button'>Biljetter</a>
                             </li>
                         );
                     })}
