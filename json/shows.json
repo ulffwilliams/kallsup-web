@@ -87,6 +87,46 @@
             "venue": "BBB Kungen",
             "note": "",
             "ticketLink": "https://www.backbeatbolaget.se/ta-livet-i-dina-egna-hander/"
+        },
+        {
+            "id": 11,
+            "date": "2025-09-05",
+            "location": "Stockholm",
+            "venue": "Debaser Nova",
+            "note": "w/ Agebt Blå",
+            "ticketLink": "https://www.debaser.se/events/agent-bla"
+        },
+        {
+            "id": 12,
+            "date": "2025-10-03",
+            "location": "Göteborg",
+            "venue": "Pustervik",
+            "note": "w/ Agent Blå",
+            "ticketLink": "https://pustervik.nu/event/agent-blakallsup/"
+        },
+        {
+            "id": 13,
+            "date": "2025-10-17",
+            "location": "Karlskrona",
+            "venue": "Oden",
+            "note": "w/ Agent Blå",
+            "ticketLink": "/"
+        },
+        {
+            "id": 14,
+            "date": "2025-10-31",
+            "location": "Malmö",
+            "venue": "Grand",
+            "note": "w/ Agent Blå",
+            "ticketLink": "https://www.grandmalmo.se/calendar/varo-presenterar-agent-bla-kallsup#:~:text=Som%20en%20del%20av%20den,har%20%C3%A4nnu%20mer%20att%20ge.&text=Fri%20entr%C3%A9%20s%C3%A5%20kom%20och,liveband%20st%C3%A5r%20p%C3%A5%20samma%20scen."
+        },
+        {
+            "id": 15,
+            "date": "2025-11-01",
+            "location": "Lund",
+            "venue": "Blekingska Nation",
+            "note": "w/ Agent Blå",
+            "ticketLink": "https://www.instagram.com/p/DNOM3UgRAYI/"
         }
     ]
 }
