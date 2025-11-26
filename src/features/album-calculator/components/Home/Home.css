@@ -1,0 +1,29 @@
+.project-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.project-list li {
+  cursor: pointer;
+}
+
+.album-art {
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+  aspect-ratio: 1/1;
+  width: 120px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: rgb(82, 82, 82);
+  text-align: center;
+  padding: 10px;
+  font-weight: 600;
+}
