@@ -128,5 +128,13 @@
             "note": "w/ Agent Blå",
             "ticketLink": "https://www.instagram.com/p/DNOM3UgRAYI/"
         }
+        ,{
+            "id": 16,
+            "date": "2025-12-19",
+            "location": "Stockholm",
+            "venue": "Slaktkyrkan",
+            "note": "Support for Svart Ridå",
+            "ticketLink": "https://slakthusen.se/svart-rida-slaktkyrkan/"
+        }
     ]
 }
